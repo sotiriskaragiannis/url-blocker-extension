@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Simple URL Blocker",
+  "version": "1.0",
+  "permissions": [
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "action": {
+    "default_title": "URL Blocker"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "blocklist",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "description": "Block specific domains and paths"
+}
